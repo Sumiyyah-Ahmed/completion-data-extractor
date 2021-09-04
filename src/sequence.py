@@ -18,7 +18,7 @@ class Sequence:
         self._seq = []
         self._failed = []
 
-    def add_process(self, commands):
+    def add_process(self, *commands):
         self._seq.append(Process(commands))
 
     def execute(self):
