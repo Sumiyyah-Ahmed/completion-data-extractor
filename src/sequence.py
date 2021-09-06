@@ -27,7 +27,7 @@ class Sequence:
             if process.process.poll() != 0:
                 failed_proc = {
                     'commands': str(process),
-                    'code': process.returncode
+                    'code': process.process.poll()
                 }
                 self._failed.append(failed_proc)
 
